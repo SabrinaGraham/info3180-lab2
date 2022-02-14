@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block main %}
+ <header>
+    <img src="{{ url_for('static', filename= 'techiepotato.jpg') }}" />
+     <h1>Sabrina Graham</h1>
+     <p>@sabbyg</p>
+     <p>Westmoreland, Jamaica</p>
+     <p>Joined {{value}}</p>
+ </header>
+ <div id='bio'> 
+ <p>I am a goal-oriented, creative and highly reliable young lady who loves website and graphic design. I am coachable and open to aquiring new skills to promote pofessional growth. Contact me if you'd like to work together on a new project.</p>
+ </div>
+
+ <div class='s'>
+
+ <div id='row'>
+
+ <div class='s'>
+ <p class='num'>0</p>
+ <p>Posts</p>
+</div>
+ 
+ <div class='s'>
+ <p class='num'>100</p>
+ <p>Following</p>
+</div>
+ 
+ <div class='s'>
+ <p class='num'>100</p>
+ <p>Followers</p>
+</div>
+
+ </div>
+
+
+ <button>Follow</button>
+</div>
+
+
+{% endblock %}
